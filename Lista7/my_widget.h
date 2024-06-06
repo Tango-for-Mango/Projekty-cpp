@@ -10,7 +10,7 @@ class MyWidget : public QWidget
     Q_OBJECT
   public:
     constexpr auto static timer_interval = 200;
-    constexpr auto static num_disks = 12; //Zmienione z 8 na 12 podpunktu
+    constexpr auto static num_disks = 12; //Zmienione z 8 na 12
     explicit MyWidget(QWidget *parent = nullptr);
     virtual void paintEvent(QPaintEvent *event);
 
