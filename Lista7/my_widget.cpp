@@ -44,7 +44,7 @@ void MyWidget::paintEvent(QPaintEvent* event)
         if (i != hidden)
         {
             painter.drawEllipse(centrum.x()-promien/2, centrum.y()-promien/2, promien, promien);
-            //painter.drawEllipse(-20, 60, 20, 20); //Dwie wartosci 40, 40 zostaly zmienione na 20, podpunktu 1
+            // Wartosci 40, 40 zostaly zmienione na 20, podpunktu 1
         }
         painter.rotate(360.0 / num_disks);
     }
@@ -53,10 +53,10 @@ void MyWidget::paintEvent(QPaintEvent* event)
 
     // Rysowanie krzyzyka
     painter.setBrush(Qt::NoBrush);  
-    painter.setPen(QPen(Qt::black, 2)); //Grubosci 2
-    int crossSize = 8; // Rozmiar krzyżyka
-    painter.drawLine(-crossSize / 2, 0, crossSize / 2, 0); // Pozioma
-    painter.drawLine(0, -crossSize / 2, 0, crossSize / 2); // Pionowa
+    painter.setPen(QPen(Qt::black, 2)); //Grubosc 2
+    int crossSize = 8; // Wielkosc
+    painter.drawLine(-crossSize / 2, 0, crossSize / 2, 0); // Poziom
+    painter.drawLine(0, -crossSize / 2, 0, crossSize / 2); // Pion
 
 }
 
