@@ -16,8 +16,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);                            
     QMessageBox::information(this, "Informacja",  
                              "Ten program reaguje na <br/>"                                     
-                             "<b><span style=\"color:red\">kliknięcia mysza</span></b> <br/>"  
-                             "w obszarze roboczym <i>okna programu</i>"
+                             "<b>kliknięcia myszka<br/>"  
+                             "w oknie programu"
                              );
 }
 
@@ -30,9 +30,4 @@ MainWindow::~MainWindow()
 void MainWindow::on_action_Zakoncz_triggered()
 {
     qApp->quit();  
-}
- 
-void MainWindow::on_action_O_programie_triggered()
-{
-    QMessageBox::information(this, "O programie", "W programie mozna klikac a nie tylko .");
 }
